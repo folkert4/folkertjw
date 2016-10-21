@@ -1,4 +1,4 @@
-app.controller('HomeController', ['$scope', function($scope) {
+app.controller('HomeController', function($scope) {
   $scope.pages = [
     {
       pagedetails: {
@@ -19,4 +19,9 @@ app.controller('HomeController', ['$scope', function($scope) {
       }
     }
   ];
-}]);
+
+  $scope.activeNav = function(element){
+      console.log('works', element);
+  };
+
+});

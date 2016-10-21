@@ -1,1 +1,8 @@
-body { padding-bottom: 70px; }
+body {
+    padding-bottom: 70px;
+}
+
+.navactive {
+    color: #fff !important;
+    background-color: transparent;
+}

@@ -3,7 +3,8 @@ app.directive("navigationlink", function() {
       restrict: "E",
       replace: true,
       scope: { 
-        pagelink: '=' 
+        pagelink: '=',
+        callback: '&' 
       }, 
       templateUrl : "js/directives/navigationlink.html"
     };
