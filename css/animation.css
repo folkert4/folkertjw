@@ -1,0 +1,102 @@
+.view-animate-container {
+  position:relative;
+  height:400px!important;
+  background:white;
+  height:40px;
+  overflow:hidden;
+}
+
+.view-animate {
+  padding:10px;
+}
+
+.view-animate.ng-enter, .view-animate.ng-leave {
+  transition:all cubic-bezier(0.2, 0.4, 0.6, 0.8) 1s;
+
+  display:block;
+  width:100%;
+
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  padding:10px;
+}
+
+.view-animate.ng-enter {
+  left:100%;
+}
+.view-animate.ng-enter.ng-enter-active {
+  left:0;
+}
+.view-animate.ng-leave.ng-leave-active {
+  left:-100%;
+}
+
+
+
+.box {
+  border-radius: 5px;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+
+.wave {
+  opacity: .2;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  background: #222;
+  width: 3600px;
+  height: 3600px;
+  margin-left: -1800px;
+  margin-top: -3600px;
+  -webkit-transform-origin: 50% 49%;
+          transform-origin: 50% 49%;
+  border-radius: 43%;
+  -webkit-animation: drift 8400ms infinite linear;
+          animation: drift 8400ms infinite linear;
+}
+
+.wave.-three {
+  -webkit-animation: drift 7000ms infinite linear;
+          animation: drift 7000ms infinite linear;
+}
+
+.wave.-two {
+  -webkit-animation: drift 14000ms infinite linear;
+          animation: drift 14000ms infinite linear;
+  opacity: .1;
+  background: #383838;
+}
+
+
+.title {
+  z-index: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+@-webkit-keyframes drift {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes drift {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
