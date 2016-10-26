@@ -44,32 +44,66 @@
 
 
 .wave {
-  opacity: .2;
+  opacity: .085;
   position: absolute;
   top: 3%;
   left: 50%;
   background: #222;
   width: 3600px;
-  height: 3600px;
-  margin-left: -1800px;
-  margin-top: -3600px;
+  height: 1800px;
+  margin-left: -2800px;
+  margin-top: -1750px;
   -webkit-transform-origin: 50% 49%;
           transform-origin: 50% 49%;
   border-radius: 43%;
-  -webkit-animation: drift 8400ms infinite linear;
-          animation: drift 8400ms infinite linear;
-}
-
-.wave.-three {
-  -webkit-animation: drift 7000ms infinite linear;
-          animation: drift 7000ms infinite linear;
+  -webkit-animation: drift 14000ms infinite linear;
+          animation: drift 14000ms infinite linear;
 }
 
 .wave.-two {
+  margin-left: -2600px;
+  margin-top: -1760px;
   -webkit-animation: drift 14000ms infinite linear;
           animation: drift 14000ms infinite linear;
   opacity: .1;
-  background: #383838;
+}
+
+.wave.-three {
+  margin-left: 2500px;
+  margin-top: -1750px;
+  -webkit-animation: drift 10000ms infinite linear;
+          animation: drift 10000ms infinite linear;
+}
+
+.wave.-four {
+  margin-left: -2400px;
+  margin-top: -1765px;
+  -webkit-animation: drift4 8400ms infinite linear;
+          animation: drift4 8400ms infinite linear;
+}
+.wave.-five {
+  margin-left: -2000px;
+  margin-top: -1755px;
+  -webkit-animation: drift4 7000ms infinite linear;
+          animation: drift4 7000ms infinite linear;
+}
+.wave.-six {
+  margin-left: -1800px;
+  margin-top: -1760px;
+  -webkit-animation: drift4 84000ms infinite linear;
+          animation: drift4 84000ms infinite linear;
+}
+.wave.-seven {
+  margin-left: -1600px;
+  margin-top: -1760px;
+  -webkit-animation: drift4 10000ms infinite linear;
+          animation: drift4 10000ms infinite linear;
+}
+.wave.-seven {
+  margin-left: -1200px;
+  margin-top: -1750px;
+  -webkit-animation: drift4 14000ms infinite linear;
+          animation: drift4 14000ms infinite linear;
 }
 
 
@@ -80,23 +114,65 @@
 }
 
 @-webkit-keyframes drift {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  from {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+    0%  { -webkit-transform:  rotate(0deg); }
+    20%  { -webkit-transform:  rotate(2deg); }
+    40%  { -webkit-transform:  rotate(1deg); }
+    60%  { -webkit-transform:  rotate(-1deg); }
+    80%  { -webkit-transform:  rotate(-2deg); }
+    100%  { -webkit-transform:  rotate(0deg); }
+
+    0%  { transform:  rotate(0deg); }
+    20%  { transform:  rotate(2deg); }
+    40%  { transform:  rotate(1deg); }
+    60%  { transform:  rotate(-1deg); }
+    80%  { transform:  rotate(-2deg); }
+    100%  { transform:  rotate(0deg); }
 }
 
 @keyframes drift {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  from {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+    0%  { -webkit-transform:  rotate(0deg); }
+    20%  { -webkit-transform:  rotate(2deg); }
+    40%  { -webkit-transform:  rotate(1deg); }
+    60%  { -webkit-transform:  rotate(-1deg); }
+    80%  { -webkit-transform:  rotate(-2deg); }
+    100%  { -webkit-transform:  rotate(0deg); }
+
+    0%  { transform:  rotate(0deg); }
+    20%  { transform:  rotate(2deg); }
+    40%  { transform:  rotate(1deg); }
+    60%  { transform:  rotate(-1deg); }
+    80%  { transform:  rotate(-2deg); }
+    100%  { transform:  rotate(0deg); }
+}
+
+@-webkit-keyframes drift4 {
+    0%  { -webkit-transform:  rotate(0deg); }
+    20%  { -webkit-transform:  rotate(3deg); }
+    40%  { -webkit-transform:  rotate(2deg); }
+    60%  { -webkit-transform:  rotate(-2deg); }
+    80%  { -webkit-transform:  rotate(-3deg); }
+    100%  { -webkit-transform:  rotate(0deg); }
+
+    0%  { transform:  rotate(0deg); }
+    20%  { transform:  rotate(3deg); }
+    40%  { transform:  rotate(2deg); }
+    60%  { transform:  rotate(-2deg); }
+    80%  { transform:  rotate(-3deg); }
+    100%  { transform:  rotate(0deg); }
+}
+
+@keyframes drift4 {
+    0%  { -webkit-transform:  rotate(0deg); }
+    20%  { -webkit-transform:  rotate(3deg); }
+    40%  { -webkit-transform:  rotate(2deg); }
+    60%  { -webkit-transform:  rotate(-2deg); }
+    80%  { -webkit-transform:  rotate(-3deg); }
+    100%  { -webkit-transform:  rotate(0deg); }
+
+    0%  { transform:  rotate(0deg); }
+    20%  { transform:  rotate(3deg); }
+    40%  { transform:  rotate(2deg); }
+    60%  { transform:  rotate(-2deg); }
+    80%  { transform:  rotate(-3deg); }
+    100%  { transform:  rotate(0deg); }
 }
