@@ -52,7 +52,7 @@
   width: 3600px;
   height: 1800px;
   margin-left: -2800px;
-  margin-top: -1750px;
+  margin-top: -1765px;
   -webkit-transform-origin: 50% 49%;
           transform-origin: 50% 49%;
   border-radius: 43%;
@@ -62,24 +62,24 @@
 
 .wave.-two {
   margin-left: -2600px;
-  margin-top: -1760px;
+  margin-top: -1765px;
   -webkit-animation: drift 14000ms infinite linear;
           animation: drift 14000ms infinite linear;
   opacity: .1;
 }
 
 .wave.-three {
-  margin-left: 2500px;
-  margin-top: -1750px;
+  margin-left: -2500px;
+  margin-top: -1760px;
   -webkit-animation: drift 10000ms infinite linear;
           animation: drift 10000ms infinite linear;
 }
 
 .wave.-four {
-  margin-left: -2400px;
+  margin-left: -2300px;
   margin-top: -1765px;
-  -webkit-animation: drift4 8400ms infinite linear;
-          animation: drift4 8400ms infinite linear;
+  -webkit-animation: drift 8400ms infinite linear;
+          animation: drift 8400ms infinite linear;
 }
 .wave.-five {
   margin-left: -2000px;
@@ -88,20 +88,20 @@
           animation: drift4 7000ms infinite linear;
 }
 .wave.-six {
-  margin-left: -1800px;
+  margin-left: -1700px;
   margin-top: -1760px;
   -webkit-animation: drift4 84000ms infinite linear;
           animation: drift4 84000ms infinite linear;
 }
 .wave.-seven {
-  margin-left: -1600px;
-  margin-top: -1760px;
+  margin-left: -1500px;
+  margin-top: -1750px;
   -webkit-animation: drift4 10000ms infinite linear;
           animation: drift4 10000ms infinite linear;
 }
 .wave.-seven {
   margin-left: -1200px;
-  margin-top: -1750px;
+  margin-top: -1740px;
   -webkit-animation: drift4 14000ms infinite linear;
           animation: drift4 14000ms infinite linear;
 }

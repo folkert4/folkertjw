@@ -1,16 +1,49 @@
 body {
     padding-bottom: 70px;
+    width: auto;
+    overflow: hidden;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.navactive {
-    color: #7d7d7d !important;
+.navbar-inverse .navbar-nav>li>a {
+    color: #545454;
     background-color: transparent;
+    font-weight: 550;
 }
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #fff;
+    font-weight: 400;
+    background-color: transparent;
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+    -webkit-transition: background-color 0.1s, -webkit-transform 0.1s ease-out;
+    transition: background-color 0.1s, -webkit-transform 0.1s ease-out;
+    transition: background-color 0.1s, transform 0.1s ease-out;
+    transition: background-color 0.1s, transform 0.1s ease-out, -webkit-transform 0.1s ease-out;
+}
+
 
 .navbar-inverse {
     background: #fff;
     border: none;
 }
 .navbar-brand {
-    color: #5e5e5e !important;
+    color: #414141 !important;
+    font-family: 'Pacifico', cursive;
+}
+
+.soic {
+    color: #5e5e5e;
+    fill: #5e5e5e;
+}
+
+.soic:hover {
+    color: #fff;
+    fill: #fff;
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+    -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+    transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+    transition: background-color 0.5s, transform 0.5s ease-out;
+    transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
 }
