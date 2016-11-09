@@ -4,8 +4,8 @@ var app = angular.module('MyApp', ['ngRoute', 'ngAnimate']);
             .when("/", {
                 templateUrl : "js/views/home.html"
             })
-            .when("/about", {
-                templateUrl : "js/views/about.html"
+            .when("/portfolio", {
+                templateUrl : "js/views/portfolio.html"
             })
             .when("/contact", {
                 templateUrl : "js/views/contact.html"

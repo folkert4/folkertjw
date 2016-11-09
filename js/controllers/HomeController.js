@@ -8,8 +8,8 @@ app.controller('HomeController', function($scope) {
     },
     {
       pagedetails: {
-        name: 'About',
-        link: '#/about'
+        name: 'Portfolio',
+        link: '#/portfolio'
       }
     },
     {
