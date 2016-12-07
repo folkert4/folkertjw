@@ -2,6 +2,12 @@ body {
     padding-bottom: 70px;
     width: auto;
     font-family: 'Ubuntu', sans-serif;
+    overflow: hidden;
+}
+@media only screen and (max-width:768px) {
+    body {
+        overflow: visible;
+    }
 }
 
 .navbar-inverse {
@@ -79,4 +85,15 @@ body {
     .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
         background-color: #5e5e5e !important;
     }
+}
+
+.portcard>a>.porthover>p {
+    font-size: 13px;
+}
+.portcard>a {
+    color: #333;
+    text-decoration: none;
+}
+.portcard>a>.porthover>h3 {
+    font-size: 18px;
 }
