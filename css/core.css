@@ -97,3 +97,7 @@ body {
 .portcard>a>.porthover>h3 {
     font-size: 18px;
 }
+
+.portcard>a>.porthover>ul>li {
+    font-size: 13px;
+}
