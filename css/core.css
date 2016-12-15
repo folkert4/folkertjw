@@ -15,7 +15,7 @@ body {
     border: none;
 }
 .navbar-brand {
-    color: #414141 !important;
+    /* color: #414141 !important;*/
     font-family: 'Pacifico', cursive;
 }
 
