@@ -1,7 +1,7 @@
-body {
+/*body {
     padding-bottom: 70px;
     width: auto;
-    font-family: 'Ubuntu', sans-serif;
+font-family: 'Ubuntu', sans-serif;
     overflow: hidden;
 }
 @media only screen and (max-width:768px) {
@@ -9,21 +9,23 @@ body {
         overflow: visible;
     }
 }
+*/
 
-.navbar-inverse {
+/*.navbar-inverse {
     background: #fff;
     border: none;
-}
+}*/
+/* 
 .navbar-brand {
-    /* color: #414141 !important;*/
+    color: #414141 !important;
     font-family: 'Pacifico', cursive;
 }
-
-.soic {
+*/
+/*.soic {
     color: #5e5e5e;
     fill: #5e5e5e;
-}
-@media only screen and (min-width:768px){
+}*/
+/*@media only screen and (min-width:768px){
     .soic:hover {
         color: #fff;
         fill: #fff;
@@ -34,9 +36,9 @@ body {
         transition: background-color 0.5s, transform 0.5s ease-out;
         transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
     }
-}
+}*/
 
-.icons {
+/*.icons {
   margin-bottom: 1.5em;
   text-align: center;
 }
@@ -58,16 +60,16 @@ body {
 }
  .icon-bar-inverse {
      background-color: #414141 !important;
- }
- .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+ }*/
+/* .navbar .navbar-toggle:focus, .navbar .navbar-toggle:hover {
     background-color: transparent !important;
 }
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+.navbar .navbar-nav>.active>a, .navbar .navbar-nav>.active>a:focus, .navbar .navbar-nav>.active>a:hover {
     background-color: transparent !important;
-}
+}*/
 
-@media only screen and (min-width:768px){
-    .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+/*@media only screen and (min-width:768px){
+    .navbar .navbar-nav>li>a:focus, .navbar .navbar-nav>li>a:hover {
         color: #fff;
         -webkit-transform: scale(1.2);
                 transform: scale(1.2);
@@ -76,13 +78,13 @@ body {
         transition: background-color 0.25s, transform 0.25s ease-out;
         transition: background-color 0.25s, transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
     }
-}
-.navbar-inverse .navbar-nav>li>a {
+}*/
+/*.navbar .navbar-nav>li>a {
     color: #5e5e5e;
-}
+}*/
 
 @media only screen and (max-width:768px){
-    .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    .navbar .navbar-nav>.active>a, .navbar .navbar-nav>.active>a:focus, .navbar .navbar-nav>.active>a:hover {
         background-color: #5e5e5e !important;
     }
 }

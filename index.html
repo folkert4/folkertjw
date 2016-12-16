@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
     <!--[if IE]><link rel="shortcut icon" href="assets/images/fav/favicon.ico"><![endif]-->
     <!--Chrome/Android -->
     <meta name="theme-color" content="#fff">
@@ -40,13 +40,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
 
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Ubuntu" rel="stylesheet">
   </head>
 
   <body ng-app="MyApp">
     
-      <nav class="navbar navbar-inverse navbar-static-top">
+      <nav class="navbar navbar-static-top">
         <div class="box">
         <div class='wave -one hidden-xs'></div>
         <div class='wave -two hidden-xs'></div>
@@ -59,17 +59,17 @@
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar icon-bar-inverse"></span>
-              <span class="icon-bar icon-bar-inverse"></span>
-              <span class="icon-bar icon-bar-inverse"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#/">James W. Folkert</a>
           </div>
           <div id="navbar" class="collapse navbar-collapse" ng-controller="NavController">
             <ul class="nav navbar-nav">
-              <li ng-class="{ active: isActive('/')}"><a href="#/">Home</a></li>
-              <li ng-class="{ active: isActive('/portfolio')}"><a href="#/portfolio">Portfolio</a></li>
-              <li ng-class="{ active: isActive('/contact')}"><a href="#/contact">Contact</a></li>
+              <li><a ng-class="{ active: isActive('/')}" href="#/">Home</a></li>
+              <li><a ng-class="{ active: isActive('/portfolio')}" href="#/portfolio">Portfolio</a></li>
+              <li><a ng-class="{ active: isActive('/contact')}" href="#/contact">Contact</a></li>
             </ul>
               <medialinks></medialinks>
           </div><!--/.nav-collapse -->

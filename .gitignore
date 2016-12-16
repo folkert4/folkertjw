@@ -17,5 +17,7 @@ wp-content/plugins/hello.php
 /sitemap.xml.gz
 /.vscode/*
 /assets/*
+/js/tests/*
+/js/.*
 *.doc
 *.docx

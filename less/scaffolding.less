@@ -30,6 +30,14 @@ body {
   line-height: @line-height-base;
   color: @text-color;
   background-color: @body-bg;
+  padding-bottom: 70px;
+  width: auto;
+  overflow: hidden;
+}
+@media only screen and (max-width:768px) {
+  body {
+      overflow: visible;
+  }
 }
 
 // Reset fonts for relevant elements

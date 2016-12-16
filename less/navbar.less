@@ -166,6 +166,7 @@
   font-size: @font-size-large;
   line-height: @line-height-computed;
   height: @navbar-height;
+  font-family: 'Pacifico', cursive;
 
   &:hover,
   &:focus {
@@ -198,7 +199,7 @@
   .navbar-vertical-align(34px);
   background-color: transparent;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 1px solid transparent;
+  border: 1px solid @brand-primary;
   border-radius: @border-radius-base;
 
   // We remove the `outline` here, but later compensate by attaching `:hover`
@@ -213,6 +214,7 @@
     width: 22px;
     height: 2px;
     border-radius: 1px;
+    background-color: @brand-primary;
   }
   .icon-bar + .icon-bar {
     margin-top: 4px;
@@ -232,10 +234,17 @@
 .navbar-nav {
   margin: (@navbar-padding-vertical / 2) -@navbar-padding-horizontal;
 
+  >li {
+    &:active {
+    color: darken(@brand-primary, 10%);
+    }
+  }
   > li > a {
     padding-top:    10px;
     padding-bottom: 10px;
     line-height: @line-height-computed;
+    color: lighten(@brand-primary, 10%);
+    fill: lighten(@brand-primary, 15%);
   }
 
   @media (max-width: @grid-float-breakpoint-max) {
@@ -272,6 +281,16 @@
       > a {
         padding-top:    @navbar-padding-vertical;
         padding-bottom: @navbar-padding-vertical;
+        &:hover {
+          color: #fff;
+          fill: #fff;
+          -webkit-transform: scale(1.2);
+                  transform: scale(1.2);
+          -webkit-transition: background-color 0.25s, -webkit-transform 0.25s ease-out;
+          transition: background-color 0.25s, -webkit-transform 0.25s ease-out;
+          transition: background-color 0.25s, transform 0.25s ease-out;
+          transition: background-color 0.25s, transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+        }
       }
     }
   }
