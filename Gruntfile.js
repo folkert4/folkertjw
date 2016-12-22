@@ -65,7 +65,7 @@ module.exports = function (grunt) {
         src: ['Gruntfile.js', 'package.js', 'grunt/*.js']
       },
       core: {
-        src: 'js/*.js'
+        src: ['js/*.js', '!js/app.js', '!js/npm.js']
       },
       test: {
         options: {
