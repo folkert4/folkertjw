@@ -1,3 +1,8 @@
+.porthovertitle {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
 .view-animate-container {
     position: relative;
     background: white;
